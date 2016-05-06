@@ -22,6 +22,10 @@ http://developer.knurld.io/getting-started-guide-0
 
 4.  Go to https://explore.knurld-demo.com/#/login and create app model with Boston, Chicago and Pyramid other way is curl 
     #####Creating an app-model
+
+#####Getting an OAuth2 token:
+export ACCESS_TOKEN=`curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d client_id="$CLIENT&client_secret=$CLIENT_SECRET" "https://api.knurld.io/v1/oauth/client_credential/accesstoken?grant_type=client_credentials" | grep access_token | cut -d"\"" -f4`
+
 curl -XPOST -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -H "Developer-Id: $DEV_ID" -d '{ "mode": "PassPhrase", "vocabulary": ["Boston","Chicago","Pyramid"], "verificationLength":3 }' "https://api.knurld.io/v1/app-models"
 
 Response will be : {   
