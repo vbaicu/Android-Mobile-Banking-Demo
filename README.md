@@ -11,12 +11,14 @@ http://developer.knurld.io/getting-started-guide-0
 1. checkout project 
 2. import in Android Studio 
 3. Change following values in string.xml
+    ```xml
     <!-- client id and client secret will be found at the knurld developer account -->
     <string name="client_id">IpctcXXX</string> 
     <string name="client_secret">zojtWjAnqXXX</string>
     <!-- You will get mail for dev id once you registered, Do not put Bearer: in developer id-->
     <string name="developer_id">eyJhbGciXXXXXXX-kdfjwnvpls</string>
     <string name="dropbox_access_token">UmDUkC6dXXXXX</string>
+    ```
 
 4.  Go to https://explore.knurld-demo.com/#/login and create app model with Boston, Chicago and Pyramid other way is curl 
     #####Creating an app-model
