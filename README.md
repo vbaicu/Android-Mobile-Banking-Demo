@@ -20,7 +20,17 @@ http://developer.knurld.io/getting-started-guide-0
     <string name="dropbox_access_token">UmDUkC6dXXXXX</string>
     ```
 
-4.  Go to https://explore.knurld-demo.com/#/login and create app model with Boston, Chicago and Pyramid other way is curl 
+4.  Go to https://explore.knurld-demo.com/#/login and create app model with Boston, Chicago and Pyramid                                      
+    Click on create button you will get following screen, if you do not have app-model created automatically user will redirect to app-model screen.
+    ![alt tag](https://github.com/knurld/Anroid-Banking-Demo/blob/master/add_appmodel.png)
+    
+    And then update appmodel id from below screen
+    ![alt tag](https://github.com/knurld/Anroid-Banking-Demo/blob/master/Knurld.png)
+
+
+
+
+    other way is curl 
     #####Creating an app-model
 
     #####Getting an OAuth2 token:
