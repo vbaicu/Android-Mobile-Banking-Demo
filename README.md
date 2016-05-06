@@ -1,4 +1,4 @@
-# Android-banking-mobile-demo
+# Android Banking Demo
 
 # Prerequisites
 1. Signup to get your own developer credentials from http://developer.knurld.io/
@@ -10,8 +10,9 @@ P.S. If you do not have dropbox account still ok, keep access token in string.xm
 http://developer.knurld.io/getting-started-guide-0
 
 1. checkout project 
-2. import in Android Studio 
-3. Change following values in string.xml
+2. import in Android Studio or any Editor
+3. Change following values in string.xml (%project_foler%/app/src/main/res/values/strings.xml)
+    
     ```xml
     <!-- client id and client secret will be found at the knurld developer account -->
     <string name="client_id">IpctcXXX</string> 
