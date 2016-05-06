@@ -51,3 +51,65 @@ http://developer.knurld.io/getting-started-guide-0
     <string name="app_model">4e0473894972397714838708bb0002696</string>
     ```
 6.  Build and Run
+7.  Screens:
+   
+
+
+<table>
+  <tr>
+    <td>
+      a. Login!
+    </td>
+    <td>
+      <img src="https://www.dropbox.com/s/6i3l7uzutt2pn11/login.png?dl=1" alt="Drawing" width="350" height="600" />
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      b. Enrollment
+    </td>
+    <td>
+      <img src="https://www.dropbox.com/s/3noywlsfatn2ojj/enrollment.png?dl=1" alt="Drawing" width="350" height="600" />
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      c. Dashboard
+    </td>
+    <td>
+      <img src="https://www.dropbox.com/s/d5hc1gdonxtpsq6/dashboard.png?dl=1" alt="Drawing" width="350" height="600" />
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      d. Transfer
+    </td>
+    <td>
+
+      <img src="https://www.dropbox.com/s/1qy6yiofyh62u8y/transfer.png?dl=1" alt="Drawing" width="350" height="600" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      e. Verification In progress
+    </td>
+    <td>
+      <img src="https://www.dropbox.com/s/g6vo7bahwa780ij/verification_in_progress.png?dl=1" alt="Drawing" width="350" height="600" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      f. Verification
+    </td>
+    <td>
+
+      <img src="https://www.dropbox.com/s/z5ln2xmz0o65naa/verification.png?dl=1" alt="Drawing" width="350" height="600" />
+    </td>
+  </tr>
+
+</table>
+
+
