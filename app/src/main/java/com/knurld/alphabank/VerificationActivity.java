@@ -447,7 +447,11 @@ public class VerificationActivity extends AppCompatActivity {
 
 
         retryCount = 0;
-        uploadWavFile(verification);
+        if (KnurldRequestHelper.dropbox_access_token.isEmpty()) {
+            uploadWavFileCloud(verification);
+        } else {
+            uploadWavFile(verification);
+        }
     }
 
 

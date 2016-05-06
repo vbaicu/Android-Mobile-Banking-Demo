@@ -381,7 +381,11 @@ public class EnrollmentActivity extends AppCompatActivity {
         enrollment = KnurldAudioHelper.getFilename("enrollment");
         KnurldAudioHelper.copyWaveFile(KnurldAudioHelper.getTempFilename(), enrollment);
         KnurldAudioHelper.deleteTempFile();
-        uploadWavFile(enrollment);
+        if(KnurldRequestHelper.dropbox_access_token.isEmpty()){
+            uploadWavFileOnCloud(enrollment);
+        }else{
+            uploadWavFile(enrollment);
+        }
         //showPopup();
         retryCount = 0;
     }
