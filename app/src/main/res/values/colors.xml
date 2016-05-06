@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~
+  ~ # Copyright 2016 Intellisis Inc.  All rights reserved.
+  ~ #
+  ~ # Use of this source code is governed by a BSD-style
+  ~ # license that can be found in the LICENSE file
+  -->
+
+<resources>
+    <color name="colorPrimary">#FF6600</color>
+    <color name="colorPrimaryDark">#FF6600</color>
+    <color name="colorAccent">#FF6600</color>
+    <color name="disabled">#808080</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="startColor">#0099CC</color>
+    <color name="popupBackGroundColor">#fbf9ea</color>
+
+</resources>

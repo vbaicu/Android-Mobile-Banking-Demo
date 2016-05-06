@@ -1,0 +1,61 @@
+<!--
+  ~
+  ~ # Copyright 2016 Intellisis Inc.  All rights reserved.
+  ~ #
+  ~ # Use of this source code is governed by a BSD-style
+  ~ # license that can be found in the LICENSE file
+  -->
+
+<resources>
+
+
+    <!-- Knurld Constants Start-->
+
+    <string-array name="vocabulary">
+        <item>Boston</item>
+        <item>Chicago</item>
+        <item>Pyramid</item>
+    </string-array>
+    <string name="host">https://api.knurld.io/</string>
+    <string name="api_version">v1</string>
+
+
+    <string name="client_id">IpctcXXX</string>
+    <string name="client_secret">zojtWjAnqXXX</string>
+    <!-- Do not put Bearer: in developer id-->
+    <string name="developer_id">eyJhbGciXXXXXXX</string>
+    <string name="dropbox_access_token">UmDUkC6dXXXXX</string>
+    <string name="app_model">5571c3a5c203f17826740e9019cb0ac0</string>
+
+    <!-- Knurld Constants End-->
+
+    <string name="app_name">Alpha Bank</string>
+    <string name="action_settings">Settings</string>
+    <string name="enrollment_message">Press the icon below and speak the following words when they prompted</string>
+    <string name="enrollment_save_message">Enter your password below to complete the enrollment process</string>
+    <string name="two_factor_auth_message">This application requires two-factor authentication, you will need to enroll in Voice as a second factor</string>
+    <string name="powered_by_knurld_message">Voice authentication is powered by </string>
+    <string name="transfer_message">For transfer greater then $10000, you need to authenticate using voice again</string>
+    <string name="login_powered_by_knurld_message">Demo powered by</string>
+    <string name="account_balance">Account Balance</string>
+    <string name="account_balance1">Checking</string>
+    <string name="account_balance2">Saving</string>
+    <string name="account_balance3">Credit Card</string>
+    <string name="account_balance11">$  5,841.02</string>
+    <string name="account_balance21">$ 10,463.05</string>
+    <string name="account_balance31">$  3,212.06</string>
+
+    <string-array name="fromAccount">
+        <item>Choose account</item>
+        <item>Checking Account #8790</item>
+        <item>Saving Account #8790</item>
+    </string-array>
+    <string-array name="toAccount">
+        <item>Choose account</item>
+        <item>Checking Account John</item>
+        <item>Saving Account John</item>
+        <item>Saving Account #9834</item>
+        <item>Checking Account #9834</item>
+
+    </string-array>
+</resources>

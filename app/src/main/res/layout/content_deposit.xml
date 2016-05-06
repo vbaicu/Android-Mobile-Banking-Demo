@@ -1,0 +1,26 @@
+<!--
+  ~
+  ~ # Copyright 2016 Intellisis Inc.  All rights reserved.
+  ~ #
+  ~ # Use of this source code is governed by a BSD-style
+  ~ # license that can be found in the LICENSE file
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.knurld.alphabank.DepositActivity"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:showIn="@layout/activity_deposit">
+    <ImageView
+        android:id="@+id/imageview_logo"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/alphabank" />
+</RelativeLayout>

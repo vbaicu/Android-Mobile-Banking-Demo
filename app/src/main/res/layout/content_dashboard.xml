@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~
+  ~ # Copyright 2016 Intellisis Inc.  All rights reserved.
+  ~ #
+  ~ # Use of this source code is governed by a BSD-style
+  ~ # license that can be found in the LICENSE file
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.knurld.alphabank.DashboardActivity"
+    tools:showIn="@layout/activity_dashboard">
+
+
+    <ImageView
+        android:id="@+id/imageview_logo"
+        android:layout_width="250dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/alphabank" />
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview_logo"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/welcomeMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/re_enroll"
+            android:layout_alignParentRight="true"
+            android:gravity="end"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/enroll"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/two_factor_auth_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingTop="10dp"
+        android:text="@string/two_factor_auth_message"
+        android:textSize="16sp" />
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/glBankOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/two_factor_auth_message"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/grid_background"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:stretchMode="columnWidth">
+
+
+        <Button
+            android:id="@+id/btnAccount"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Account"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+
+        <Button
+            android:id="@+id/btnTransfer"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Transfer"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnBillPay"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_button_disabled"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Bill Pay"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnDeposit"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_button_disabled"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Deposit"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/knurld_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/powered_by_knurld_message"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/knurld_logo"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/knulrd_logo" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<!--
+  ~
+  ~ # Copyright 2016 Intellisis Inc.  All rights reserved.
+  ~ #
+  ~ # Use of this source code is governed by a BSD-style
+  ~ # license that can be found in the LICENSE file
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.knurld.alphabank.TransferActivity"
+    tools:showIn="@layout/activity_transfer">
+
+    <ImageView
+        android:id="@+id/imageview_logo"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/alphabank" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/fromAccount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#d11f08"
+            android:entries="@array/fromAccount"
+            android:padding="5dp" />
+
+        <Spinner
+            android:id="@+id/toAccount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#d11f08"
+            android:entries="@array/toAccount"
+            android:padding="5dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text="$"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Amount"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:text="10001"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/transfer_message"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnTransferAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:text="Transfer"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>
