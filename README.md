@@ -4,6 +4,7 @@
 1. Signup to get your own developer credentials from http://developer.knurld.io/
 2. Create dropbox app and put access_token in string.xml
 reference : https://blogs.dropbox.com/developers/2014/05/generate-an-access-token-for-your-own-account/
+P.S. If you do not have dropbox account still ok, keep access token in string.xml empty and it will upload to the provided dropbox account, but it will add network latency to app will perform little slow.
 
 ##Knurld Getting Started Guide
 http://developer.knurld.io/getting-started-guide-0
@@ -17,6 +18,7 @@ http://developer.knurld.io/getting-started-guide-0
     <string name="client_secret">zojtWjAnqXXX</string>
     <!-- You will get mail for dev id once you registered, Do not put Bearer: in developer id-->
     <string name="developer_id">eyJhbGciXXXXXXX-kdfjwnvpls</string>
+    <!--If you do not have it you can keep it blank-->
     <string name="dropbox_access_token">UmDUkC6dXXXXX</string>
     ```
 
@@ -26,8 +28,6 @@ http://developer.knurld.io/getting-started-guide-0
     
     And then update appmodel id from below screen
     ![alt tag](https://github.com/knurld/Anroid-Banking-Demo/blob/master/Knurld.png)
-
-
 
 
     other way is curl 
