@@ -2,9 +2,9 @@
 
 # Prerequisites
 1. Signup to get your own developer credentials from http://developer.knurld.io/
-2. Create dropbox app and put access_token in string.xml
+2. Create dropbox app and put access_token in string.xml (This is for storing wav file)
 reference : https://blogs.dropbox.com/developers/2014/05/generate-an-access-token-for-your-own-account/
-P.S. If you do not have dropbox account still ok, keep access token in string.xml empty and it will upload to the provided dropbox account, but it will add network latency to app will perform little slow.
+P.S. If you do not have dropbox account, still ok. Keep access token in string.xml as empty and it will directly upload wav files to knurld dropbox account. Note that, It will add network latency to app and app will perform little slow.
 
 ##Knurld Getting Started Guide
 http://developer.knurld.io/getting-started-guide-0
