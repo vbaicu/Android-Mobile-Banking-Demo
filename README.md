@@ -11,7 +11,7 @@ http://developer.knurld.io/getting-started-guide-0
 
 1. checkout project 
 2. import in Android Studio or any Editor
-3. Change following values in string.xml (%project_foler%/app/src/main/res/values/strings.xml)
+3. Change following values in string.xml (%project_folder%/app/src/main/res/values/strings.xml)
     
     ```xml
     <!-- client id and client secret will be found at the knurld developer account -->
@@ -24,10 +24,12 @@ http://developer.knurld.io/getting-started-guide-0
     ```
 
 4.  Go to https://explore.knurld-demo.com/#/login and create app model with Boston, Chicago and Pyramid                                      
-    Click on create button you will get following screen, if you do not have app-model created automatically user will redirect to app-model screen.
+    Click on create button you will get following screen, if you do not have app-model created automatically user will redirect to app-model screen
+
     ![alt tag](https://github.com/knurld/Anroid-Banking-Demo/blob/master/add_appmodel.png)
     
-    And then update appmodel id from below screen
+    Then update appmodel id from below screen
+
     ![alt tag](https://github.com/knurld/Anroid-Banking-Demo/blob/master/Knurld.png)
 
 
@@ -39,7 +41,8 @@ http://developer.knurld.io/getting-started-guide-0
     
     curl -XPOST -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -H "Developer-Id: $DEV_ID" -d '{ "mode": "PassPhrase", "vocabulary": ["Boston","Chicago","Pyramid"], "verificationLength":3 }' "https://api.knurld.io/v1/app-models"
     
-    Response will be : {   
+    Response will be : 
+    {   
         "href":"https://api.knurld.io/v1/app-models/4e0473894972397714838708bb0002696"
     }
 
