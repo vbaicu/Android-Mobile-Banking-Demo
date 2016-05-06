@@ -29,5 +29,3 @@ Response will be : {
 
 6.  Build and Run
 
-It has pre-defined app-model with Boston, Chicago and Pyramid if you want to use a different set of words 
-
