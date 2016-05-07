@@ -113,3 +113,5 @@ http://developer.knurld.io/getting-started-guide-0
 </table>
 
 
+# License You may read [License](https://github.com/knurld/Android-Mobile-Banking-Demo/blob/master/LICENSE) agreement for using this software.
+
