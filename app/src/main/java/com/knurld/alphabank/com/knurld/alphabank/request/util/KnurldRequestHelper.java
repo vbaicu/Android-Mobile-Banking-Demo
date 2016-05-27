@@ -42,7 +42,7 @@ public class KnurldRequestHelper {
     public static String AUDIO_URL = "";
     public static String CONSUMER_HREF_KEY = "CONSUMER_HREF";
     public static String CONSUMER_ENDPOINT = "/consumers";
-    public static String UPLOAD_URL = "https://knurldupload.herokuapp.com/rest/file/upload";
+    public static String UPLOAD_URL = "https://voicetools-api.knurld-demo.com/rest/file/upload";
     public static String ENROLLMENT_ENDPOINT = "/enrollments";
     public static String VERIFICAION_ENDPOINT = "/verifications";
 
