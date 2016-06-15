@@ -473,7 +473,7 @@ public class EnrollmentActivity extends AppCompatActivity {
                             interval.accumulate("stop", words.getStopTime());
                         }
                         interval.accumulate("start", words.getStartTime());
-                        interval.accumulate("phrase", vocabulary[count++]);
+                        interval.accumulate("phrase", vocabulary[count++%3]);
                         intervals.put(interval);
                     }
                     jsonObject.accumulate("intervals", intervals);
@@ -494,7 +494,14 @@ public class EnrollmentActivity extends AppCompatActivity {
                     if (AlphaBankUtil.debug)
                         Toast.makeText(EnrollmentActivity.this, "File Uploading :" + error.getMessage() == null ? "File Uploading..." : error.getMessage(), Toast.LENGTH_SHORT).show();
                 }
-                uploadWavFile(enrollment);
+                Thread thread =  new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        uploadWavFile(enrollment);
+                    }
+                });
+                thread.run();
+//                uploadWavFile(enrollment);
                 if (retryCount == 5) {
                     runOnUiThread(new Runnable() {
                         @Override
