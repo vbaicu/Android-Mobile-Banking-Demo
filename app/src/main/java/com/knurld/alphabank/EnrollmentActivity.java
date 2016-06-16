@@ -459,7 +459,7 @@ public class EnrollmentActivity extends AppCompatActivity {
                     Toast.makeText(EnrollmentActivity.this, response, Toast.LENGTH_SHORT).show();
                 //uploadForIntervals();
 
-                List<WordInterval> wordList = WordDetection.detectWordsAutoSensitivity(enrollment, 9);
+                List<WordInterval> wordList = WordDetection.detectWordsAutoSensitivity(enrollment,vocabulary.length *3);
                 JSONObject jsonObject = new JSONObject();
                 JSONArray intervals = new JSONArray();
                 int count = 0;
@@ -473,7 +473,7 @@ public class EnrollmentActivity extends AppCompatActivity {
                             interval.accumulate("stop", words.getStopTime());
                         }
                         interval.accumulate("start", words.getStartTime());
-                        interval.accumulate("phrase", vocabulary[count++%3]);
+                        interval.accumulate("phrase", vocabulary[count++%vocabulary.length]);
                         intervals.put(interval);
                     }
                     jsonObject.accumulate("intervals", intervals);
